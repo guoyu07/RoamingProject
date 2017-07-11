@@ -1,0 +1,14 @@
+{
+    "mySql":{
+	    "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "mtour_db",
+	    "multipleStatements": true
+    },
+    "Oracle":{
+        "user": "username",
+        "password": "",
+        "connectString": "localhost"
+    }
+}

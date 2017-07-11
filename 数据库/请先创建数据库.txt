@@ -1,0 +1,11 @@
+create database mtour_db CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+注意：在创建表的时候请给整体一个字符编码和字符排序规则
+	ENGINE=InnoDB default charset=utf8 COLLATE=utf8_unicode_ci;
+例子：
+use mtour_db;
+create table student(
+    id_d int(10) primary key not null AUTO_INCREMENT,
+    name_d char(20) unique not null
+) ENGINE=InnoDB default charset=utf8 collate=utf8_unicode_ci;
+

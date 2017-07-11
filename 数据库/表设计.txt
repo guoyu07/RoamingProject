@@ -1,0 +1,52 @@
+用户表：user_u
+用户详细信息表：user_info
+
+目的地表：dest_d
+id_d：主键
+name_d:目的地名字
+info_d:目的地信息
+comment_d:景点点评人数
+
+目的地评论表：dest_comment
+id_c：主键
+info_c：评论内容
+date_c：评论时间
+userinfo_key:关联到用户详细信息的外键
+dest_key:关联到目的地的外键
+
+酒店表：pub_p
+id_p：主键
+name_p：酒店名称
+money_p：住店价格
+addr_p：酒店大概地址
+img_p：酒店展示图
+intro_p：酒店简介
+intro_pinfo：酒店介绍
+pub_dest_key:关联到目的地的外键
+
+酒店订单表：pub_order
+date_o:订单时间
+pub_key:所定酒店的外键
+user_key:所订的用户的外键
+
+酒店评论表：pub_comment
+date_c 评论日期
+info_c 评论内容
+user_key 关联用户的外键
+pub_key 关联酒店的外键
+
+
+六个区的景点表:spot_s
+id_s:主键
+name_s:景点名字
+brief_s:景点简介
+addr_s:景点地址
+img_s:景点代表图
+dest_key:关联到目的地的外键
+
+六个区的景点介绍表:spot_info
+id_sInfo:主键
+name_sInfo:景点介绍名
+info_sInfo:景点介绍内容
+bgimg_sInfo:景点背景图
+spot_key:关联景点表的外键
